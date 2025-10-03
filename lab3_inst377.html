@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title>Inst 377 Lab 3</title>
+    <style>
+      body {
+        background-color: rgb(216, 201, 175);
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      #submitbutton {
+        background-color: black;
+        color: aliceblue;
+        margin-top: 1%;
+      }
+
+      #submitbutton:hover {
+        background-color: green;
+      }
+
+      nav {
+        background-color: rgb(59, 94, 156);
+        margin-top: 1%;
+        margin-bottom: 1%;
+      }
+
+      nav:hover {
+        background-color: rgb(225, 175, 49);
+      }
+
+      main {
+        background-color: rgb(15, 118, 118);
+        width: 60%;
+        border: 1px solid;
+        float: left;
+      }
+
+      div {
+        background-color: rgb(48, 53, 54);
+        padding: 10px;
+        text-align: center;
+        color: white;
+        clear: both;
+      }
+
+      .sidebar {
+        background-color: rgb(113, 159, 168);
+        text-align: left;
+        float: right;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        width: 30%;
+        clear: right;
+      }
+
+      .sidebar:hover {
+        background-color: rgb(77, 176, 23);
+      }
+      #Name:focus {
+        width: 60%;
+      }
+    </style>
+  </head>
+
+  <div>
+    <h1>Lab 3 Rock Paper Scissors</h1>
+  </div>
+
+  <nav>
+    <a href="https://finance.yahoo.com/?guccounter=1">Yahoo Finance</a>
+    <a href="https://gemini.google.com/">Gemini</a>
+    <a href="https://www.testudo.umd.edu/">Testudo</a>
+  </nav>
+
+  <main>
+    <form>
+      <label for="Name" class="select">Name:</label>
+      <input type="text" id="Name" required /> <br /><br />
+      <label for="choice">Your choice:</label>
+      <select name="choice" id="choices">
+        <option value="Rock">Rock</option>
+        <option value="Paper">Paper</option>
+        <option value="Scissors">Scissors</option>
+      </select>
+      <input type="submit" value="Submit" id="submitbutton" />
+    </form>
+  </main>
+
+  <div class="sidebar">
+    <h2><u>Rules</u></h2>
+    <p>You must choose Rock, Papers or Scissors</p>
+    <p>The combos are as follows:</p>
+    <ul>
+      <li>Rock beats Scissors</li>
+      <li>Scissors beats Paper</li>
+      <li>Paper beats Rock</li>
+    </ul>
+  </div>
+
+  <div>
+    <footer>
+      <p>Rock Paper Scissors is awesome<br /></p>
+    </footer>
+  </div>
+</html>
